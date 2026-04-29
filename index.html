@@ -1,0 +1,196 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moto Tapia Service - Especialistas en mantenimiento y reparación de motocicletas en Uruapan, Michoacán. Servicio técnico especializado, refacciones y accesorios.">
+    <meta name="keywords" content="moto servicio, taller motos uruapan, refacciones moto, mantenimiento motocicletas">
+    <meta name="author" content="Moto Tapia Service">
+    <title>Moto Tapia Service | Especialistas en Motocicletas Uruapan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Ir a inicio">
+            <img src="img/logo.png" alt="Logo Moto Tapia Service" class="logo-img" onerror="this.src='img/logo.jpg'">
+            <div class="logo-text">
+                <h1>MOTO <span>TAPIA</span></h1>
+                <p>SERVICE</p>
+            </div>
+        </a>
+        <button class="mobile-menu" id="mobileMenuBtn" aria-label="Menú" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" id="navLinks" role="list">
+            <li role="listitem"><a href="index.html" class="active-nav">Inicio</a></li>
+            <li role="listitem"><a href="#servicios">Servicios</a></li>
+            <li role="listitem"><a href="productos.html">Refacciones</a></li>
+            <li role="listitem"><a href="#citas" class="btn-cta">Agendar Cita</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section id="inicio" class="hero" aria-label="Hero banner">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 
+                    Uruapan, Michoacán
+                </div>
+                <h2>Servicio Técnico <br> <span class="highlight">Especializado</span></h2>
+                <p>Atención integral para tu motocicleta. Contamos con escaneo multimarca, sistema Fuel Injection y mecánica en general con la mejor garantía de la ciudad.</p>
+                <div class="hero-buttons">
+                    <a href="#citas" class="btn" aria-label="Agendar revisión por WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Agendar Revisión
+                    </a>
+                    <a href="productos.html" class="btn btn-outline" aria-label="Ver accesorios">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i> Ver Accesorios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services-section" aria-labelledby="servicios-title">
+        <div class="container">
+            <h2 id="servicios-title" class="section-title">Nuestros <span>Servicios</span></h2>
+            <p class="section-sub">Soluciones precisas con tecnología avanzada para cualquier tipo de motocicleta.</p>
+            
+            <div class="services-grid">
+                <article class="s-card">
+                    <i class="fas fa-laptop-medical" aria-hidden="true"></i>
+                    <h3>Escaneo Multimarca</h3>
+                    <p>Diagnóstico por computadora preciso para detectar fallas electrónicas en tiempo real.</p>
+                </article>
+                <article class="s-card">
+                    <i class="fas fa-gas-pump" aria-hidden="true"></i>
+                    <h3>Fuel Injection</h3>
+                    <p>Mantenimiento, limpieza y calibración de sistemas de inyección electrónica de combustible.</p>
+                </article>
+                <article class="s-card">
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                    <h3>Sistemas Eléctricos</h3>
+                    <p>Reparación de cableado, marchas, estatores y diagnóstico de carga y luces.</p>
+                </article>
+                <article class="s-card">
+                    <i class="fas fa-wrench" aria-hidden="true"></i>
+                    <h3>Reparación de Motores</h3>
+                    <p>Ajuste de motor, servicios preventivos, correctivos y mecánica en general de alta calidad.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="citas" class="appointment-section" aria-labelledby="citas-title">
+        <div class="container">
+            <div class="appointment-wrapper">
+                <div class="appointment-info">
+                    <h3 id="citas-title">Agenda tu <span>Cita</span></h3>
+                    <p>Genera tu orden de servicio directamente a nuestro sistema por WhatsApp.</p>
+                    <address>
+                        <div class="info-detail">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 
+                            <span>Av. Latinoamericana 2020–2100, 60153 Uruapan Mich., México</span>
+                        </div>
+                        <div class="info-detail">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i> 
+                            <span>+52 (452) 123-4567</span>
+                        </div>
+                        <div class="info-detail">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> 
+                            <span>contacto@mototapia.com</span>
+                        </div>
+                        <div class="info-detail">
+                            <i class="fas fa-clock" aria-hidden="true"></i> 
+                            <span>Lun-Vie: 9am - 7pm | Sáb: 9am - 3pm</span>
+                        </div>
+                    </address>
+                </div>
+                
+                <form id="appointmentForm" class="form-cita" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombreCita">Tu Nombre *</label>
+                            <input type="text" id="nombreCita" name="nombre" placeholder="Nombre completo" required aria-required="true">
+                            <div class="error-message" id="error-nombre"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="motoModelo">Moto (Marca/Cilindrada) *</label>
+                            <input type="text" id="motoModelo" name="moto" placeholder="Ej: Vento 250, Honda 150" required aria-required="true">
+                            <div class="error-message" id="error-moto"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="servicioTipo">Servicio Requerido *</label>
+                            <select id="servicioTipo" name="servicio" required aria-required="true">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="Escaneo Computarizado">Escaneo Computarizado</option>
+                                <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+                                <option value="Reparación de Motor">Reparación de Motor</option>
+                                <option value="Sistema Fuel Injection">Sistema Fuel Injection</option>
+                                <option value="Falla Eléctrica">Falla Eléctrica</option>
+                            </select>
+                            <div class="error-message" id="error-servicio"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaCita">Fecha de visita *</label>
+                            <input type="date" id="fechaCita" name="fecha" required aria-required="true">
+                            <div class="error-message" id="error-fecha"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefonoCita">Teléfono (Opcional)</label>
+                        <input type="tel" id="telefonoCita" name="telefono" placeholder="Para confirmación rápida">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentariosCita">Detalles de la falla</label>
+                        <textarea id="comentariosCita" name="comentarios" rows="3" placeholder="¿Qué le duele a tu moto?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-cita" aria-label="Generar cita por WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Generar Cita vía WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MOTO TAPIA SERVICE</h3>
+                    <p>Av. Latinoamericana 2020, Uruapan, Michoacán.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 MOTO TAPIA SERVICE. Desarrollo por Josué Rojas.
+            </div>
+        </div>
+    </footer>
+</main>
+
+<div id="toastMessage" class="toast-msg" role="status" aria-live="polite">
+    <i class="fas fa-check-circle" aria-hidden="true"></i> 
+    <span>Acción realizada</span>
+</div>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
