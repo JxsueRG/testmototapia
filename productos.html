@@ -1,0 +1,72 @@
+<!-- productos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refacciones y accesorios para motocicletas en Uruapan. Baterías, llantas, aceites y más al mejor precio.">
+    <title>Refacciones y Accesorios | Moto Tapia Uruapan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Moto Tapia" class="logo-img" onerror="this.src='img/logo.jpg'">
+            <div class="logo-text">
+                <h1>MOTO <span>TAPIA</span></h1>
+                <p>SERVICE</p>
+            </div>
+        </a>
+        <button class="mobile-menu" id="mobileMenuBtn" aria-label="Menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="productos.html" class="active-nav">Refacciones</a></li>
+            <li><a href="index.html#citas" class="btn-cta">Agendar Cita</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main style="padding-top: 100px; min-height: 80vh; background: var(--dark-bg, #f8fafc);">
+    <section class="products-section" style="padding-top: 20px;">
+        <div class="container">
+            <h2 class="section-title">Venta de <span>Refacciones</span></h2>
+            <p class="section-sub">Baterías, llantas, aceites y accesorios originales para el óptimo desempeño de tu moto.</p>
+            
+            <div class="filters" id="filterContainer" role="tablist">
+                <button class="filter-btn active" data-cat="all" role="tab">Todo el Catálogo</button>
+                <button class="filter-btn" data-cat="baterias" role="tab">Baterías</button>
+                <button class="filter-btn" data-cat="llantas" role="tab">Llantas</button>
+                <button class="filter-btn" data-cat="refacciones" role="tab">Refacciones</button>
+                <button class="filter-btn" data-cat="accesorios" role="tab">Accesorios</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid" role="list">
+                <!-- Productos cargados dinámicamente -->
+            </div>
+            
+            <div id="loadingProducts" class="loading-spinner" style="display: none; text-align: center; padding: 40px;">
+                <i class="fas fa-spinner fa-spin fa-2x"></i>
+                <p>Cargando productos...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="copyright">
+            © 2026 MOTO TAPIA SERVICE. Av. Latinoamericana, Uruapan.
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
